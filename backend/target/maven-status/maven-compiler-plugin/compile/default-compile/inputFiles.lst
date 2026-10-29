@@ -1,0 +1,10 @@
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\config\CorsConfig.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\controller\AiTestController.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\controller\HistoryController.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\controller\ResumeController.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\entity\Analysis.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\repository\AnalysisRepository.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\ResumeAnalyzerApplication.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\service\AnalysisService.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\service\OllamaService.java
+C:\Users\Mohammad Mustak\Downloads\ai-resume-analyzer\backend\src\main\java\com\mustak\resumeanalyzer\service\PdfService.java

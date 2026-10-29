@@ -1,0 +1,457 @@
+
+/* ==============================
+   GLOBAL STYLES
+============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #05070b;
+  color: #e9eef7;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+  min-height: 68px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #18202c;
+  background: #080b11;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 19px;
+}
+
+header span {
+  color: #8290a3;
+  font-size: 13px;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+main {
+  width: min(1000px, 92%);
+  margin: auto;
+  padding: 55px 0;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+
+.hero {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.eyebrow {
+  color: #4da3ff;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(38px, 7vw, 70px);
+  line-height: 1.03;
+  margin: 10px 0 18px;
+  overflow-wrap: anywhere;
+}
+
+h1 b {
+  color: #4da3ff;
+}
+
+.hero p:not(.eyebrow) {
+  color: #98a4b5;
+  max-width: 620px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* ==============================
+   FORM AND RESULT CARDS
+============================== */
+
+.card,
+.result-card {
+  background: #0b1018;
+  border: 1px solid #1b2635;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.result-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin: 18px 0 9px;
+}
+
+/* ==============================
+   FILE UPLOAD
+============================== */
+
+.upload {
+  border: 1px dashed #30445e;
+  border-radius: 12px;
+  padding: 20px;
+  background: #080d14;
+}
+
+input[type="file"] {
+  width: 100%;
+  max-width: 100%;
+  color: #aeb9c8;
+}
+
+small {
+  display: block;
+  margin-top: 10px;
+  color: #4da3ff;
+  overflow-wrap: anywhere;
+}
+
+/* ==============================
+   TEXT AREAS
+============================== */
+
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  background: #070b11;
+  color: #e9eef7;
+  border: 1px solid #273448;
+  border-radius: 12px;
+  padding: 14px;
+  outline: none;
+  font: inherit;
+  line-height: 1.6;
+}
+
+textarea:focus {
+  border-color: #4da3ff;
+  box-shadow: 0 0 0 2px rgb(77 163 255 / 12%);
+}
+
+textarea::placeholder {
+  color: #657286;
+}
+
+/* ==============================
+   BUTTON
+============================== */
+
+button {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 20px;
+  background: #1677ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #0867e8;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ==============================
+   STATUS MESSAGE
+============================== */
+
+.message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #101b2a;
+  color: #9fcaff;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* ==============================
+   ANALYSIS RESULTS
+============================== */
+
+.results h2 {
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 20px 0;
+}
+
+.score {
+  min-width: 0;
+  background: #0b1018;
+  border: 1px solid #1b2635;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+}
+
+.score strong {
+  display: block;
+  font-size: 44px;
+  color: #4da3ff;
+  overflow-wrap: anywhere;
+}
+
+.score span {
+  color: #8d9bad;
+  font-size: 14px;
+}
+
+/* ==============================
+   RESULT GRID
+============================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.result-card h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: #e9eef7;
+}
+
+.result-card p {
+  color: #a9b4c3;
+  line-height: 1.7;
+}
+
+/* Make Strengths and Recommendations full width */
+
+.grid .result-card:nth-child(n + 3) {
+  grid-column: 1 / -1;
+}
+
+/* ==============================
+   SKILL CHIPS
+============================== */
+
+.chips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 12px;
+  min-width: 0;
+}
+
+.skill-chip,
+.chips span {
+  display: inline-flex;
+  flex: 0 1 auto;
+  width: auto;
+  max-width: 100%;
+  padding: 8px 12px;
+  background: #11233b;
+  border: 1px solid #214a78;
+  color: #9dceff;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* ==============================
+   MARKDOWN AI FEEDBACK
+============================== */
+
+.markdown {
+  color: #a9b4c3;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.markdown > :first-child {
+  margin-top: 0;
+}
+
+.markdown > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown p {
+  margin: 0 0 14px;
+  color: #a9b4c3;
+  line-height: 1.8;
+}
+
+.markdown strong {
+  color: #e9eef7;
+  font-weight: 700;
+}
+
+.markdown em {
+  color: #c3d8f2;
+}
+
+.markdown ul,
+.markdown ol {
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.markdown li {
+  margin-bottom: 8px;
+  padding-left: 3px;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  color: #e9eef7;
+  line-height: 1.5;
+  margin: 18px 0 10px;
+  font-size: 17px;
+}
+
+.markdown a {
+  color: #4da3ff;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown code {
+  background: #11233b;
+  color: #9dceff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.markdown blockquote {
+  margin: 12px 0;
+  padding: 10px 16px;
+  border-left: 3px solid #4da3ff;
+  background: #080d14;
+  color: #a9b4c3;
+  border-radius: 0 8px 8px 0;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+  text-align: center;
+  color: #657286;
+  padding: 30px;
+  border-top: 1px solid #18202c;
+  font-size: 14px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 700px) {
+  header {
+    padding: 0 5%;
+  }
+
+  header span {
+    display: none;
+  }
+
+  main {
+    padding: 35px 0;
+  }
+
+  .card,
+  .result-card {
+    padding: 20px;
+  }
+
+  .grid,
+  .scores {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid .result-card:nth-child(n + 3) {
+    grid-column: auto;
+  }
+
+  .results h2 {
+    font-size: 23px;
+  }
+
+  .score strong {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand {
+    font-size: 16px;
+  }
+
+  main {
+    width: 94%;
+  }
+
+  .card,
+  .result-card {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}

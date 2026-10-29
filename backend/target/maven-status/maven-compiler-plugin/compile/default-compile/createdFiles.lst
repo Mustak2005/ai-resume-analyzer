@@ -1,0 +1,7 @@
+com\mustak\resumeanalyzer\repository\AnalysisRepository.class
+com\mustak\resumeanalyzer\config\CorsConfig.class
+com\mustak\resumeanalyzer\service\PdfService.class
+com\mustak\resumeanalyzer\entity\Analysis.class
+com\mustak\resumeanalyzer\service\OllamaService.class
+com\mustak\resumeanalyzer\ResumeAnalyzerApplication.class
+com\mustak\resumeanalyzer\controller\AiTestController.class

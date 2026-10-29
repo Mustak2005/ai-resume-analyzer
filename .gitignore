@@ -1,0 +1,33 @@
+# Java / Maven
+
+backend/target/
+*.class
+*.log
+
+# Frontend dependencies and build output
+
+frontend/node_modules/
+frontend/dist/
+
+# Environment files and secrets
+
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Local databases
+
+backend/data/
+*.db
+*.mv.db
+*.trace.db
+
+# IDE and operating system files
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
